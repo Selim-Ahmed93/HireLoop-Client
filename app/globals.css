@@ -127,3 +127,26 @@
     @apply font-sans;
     }
 }
+
+@keyframes hero-twinkle {
+  0%,
+  100% {
+    opacity: var(--star-opacity, 0.35);
+  }
+  50% {
+    opacity: calc(var(--star-opacity, 0.35) * 0.2);
+  }
+}
+
+.hero-star {
+  animation: hero-twinkle var(--star-duration, 5s) ease-in-out infinite;
+  animation-delay: var(--star-delay, 0s);
+  will-change: opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-star {
+    animation: none;
+    opacity: var(--star-opacity, 0.35);
+  }
+}
