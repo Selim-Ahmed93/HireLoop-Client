@@ -6,8 +6,7 @@ import { SignUpForm } from "@/components/auth/sign-up-form"
 
 export const metadata: Metadata = {
   title: "Create Account | HireLoop",
-  description:
-    "Create your free HireLoop account and get matched with hand-picked roles from vetted companies.",
+  description: "Create your free HireLoop account and get matched with hand-picked roles from vetted companies.",
 }
 
 export default function SignUpPage() {
